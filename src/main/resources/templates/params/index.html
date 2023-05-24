@@ -7,8 +7,11 @@
 <body>
 <h1>Send parameters</h1>
 <ul>
-    <li><a th:href="@{/params/string(text='Valor enviado desde index')}">/params/strings</a></li>
     <li><a th:href="@{/params/string(text='Otro valor desde index')}">/params/strings</a></li>
+    <li><a th:href="@{/params/string(text='Valor enviado desde index')}">/params/strings</a></li>
+    <li><a th:href="@{/params/mix-params(saludo='Como estas bobo', numero=12)}">/params/mix-params</a></li>
+    <li><a th:href="@{/params/mix-params-request(saludo='Como estas bobo', numero=12)}">/params/mix-params-request</a>
+    </li>
 </ul>
 </body>
 </html>

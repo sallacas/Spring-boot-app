@@ -24,4 +24,7 @@ public class ItemTicket {
     public void setAmount(Integer amount) {
         this.amount = amount;
     }
+    public Integer importCalculate(){
+        return amount * item.getPrice();
+    }
 }
